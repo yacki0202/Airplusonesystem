@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>에어플러스원시스템 | Airplus One System</title>
+  <meta name="description" content="에어컨 설치·청소·점검 전문 에어플러스원시스템" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Bar / Nav -->
+  <header class="container">
+    <nav class="nav">
+      <a class="brand" href="#">에어플러스원시스템</a>
+      <ul class="menu">
+        <li><a href="#about">회사소개</a></li>
+        <li><a href="#services">서비스</a></li>
+        <li><a href="#contact">문의</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero (에어컨 관련 사진 + 로고) -->
+  <section class="hero container">
+    <div class="hero-media">
+      <!-- Replace the placeholder image with your own file in /assets and update src -->
+      <img src="https://images.unsplash.com/photo-1626782859218-9b826dc9e6a2?q=80&w=1400&auto=format&fit=crop" alt="에어컨 설치 이미지(샘플)" />
+    </div>
+    <div class="hero-side">
+      <div class="logo-card">
+        <div class="logo-placeholder">LOGO</div>
+        <p class="mt-8">Airplus One System</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#contact">지금 바로 문의하기</a>
+          <a class="btn btn-outline" href="#services">서비스 보기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Button / Card quick links -->
+  <section id="services" class="container section">
+    <h2 class="section-title">주요 서비스</h2>
+    <div class="cards">
+      <a class="card" href="#cleaning">
+        <div class="card-icon">🧼</div>
+        <h3>에어컨 세척</h3>
+        <p>곰팡이/먼지 제거로 냄새·바이러스↓ 쾌적함↑</p>
+        <span class="btn btn-ghost">자세히</span>
+      </a>
+      <a class="card" href="#install">
+        <div class="card-icon">🛠️</div>
+        <h3>설치·이전설치</h3>
+        <p>가정/사무실 맞춤 동선 및 배관 설계</p>
+        <span class="btn btn-ghost">자세히</span>
+      </a>
+      <a class="card" href="#checkup">
+        <div class="card-icon">🔍</div>
+        <h3>점검·누수수리</h3>
+        <p>냉매 압력·배수·전원 전반 점검</p>
+        <span class="btn btn-ghost">자세히</span>
+      </a>
+      <a class="card" href="#multi">
+        <div class="card-icon">🏢</div>
+        <h3>멀티·천장형</h3>
+        <p>상가/학원/사무실 상업용 전문 시공</p>
+        <span class="btn btn-ghost">자세히</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container section">
+    <h2 class="section-title">회사소개</h2>
+    <div class="about">
+      <p>
+        에어플러스원시스템은 에어컨 설치·세척·점검 전문팀입니다. 안전한 시공과
+        깔끔한 마감, 투명한 견적으로 신뢰를 쌓아가고 있습니다.
+      </p>
+      <ul class="bullets">
+        <li>책임시공 &amp; 사후관리</li>
+        <li>합리적 가격 &amp; 정확한 견적</li>
+        <li>예약부터 시공까지 원스톱</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Footer (사업자 정보) -->
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>문의</h3>
+        <p class="muted">언제든지 연락주세요. 친절히 안내드릴게요.</p>
+        <div class="btn-row mt-12">
+          <a class="btn btn-primary" href="tel:010-0000-0000">전화 문의</a>
+          <a class="btn btn-outline" href="mailto:your@email.com">이메일</a>
+        </div>
+      </div>
+      <div>
+        <h3>사업자 정보</h3>
+        <dl class="biz">
+          <div><dt>상호명</dt><dd>에어플러스원시스템</dd></div>
+          <div><dt>사업자등록번호</dt><dd>000-00-00000</dd></div>
+          <div><dt>주소</dt><dd>서울특별시 ○○구 ○○로 00</dd></div>
+          <div><dt>대표자</dt><dd>홍길동</dd></div>
+          <div><dt>전화번호</dt><dd>010-0000-0000</dd></div>
+        </dl>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year"></span> Airplus One System</div>
+  </footer>
+
+  <script>
+    // 연도 자동 출력
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
