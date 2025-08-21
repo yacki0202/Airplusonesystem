@@ -54,7 +54,7 @@
       <a class="card" href="#install">
         <div class="card-icon">🛠️</div>
         <h3>설치·이전설치</h3>
-        <p>가정/사무실 맞춤 동선 및 배관 설계</p>
+        <p>시스템에어컨 이전 설치 및 장비 교체</p>
         <span class="btn btn-ghost">자세히</span>
       </a>
       <a class="card" href="#checkup">
@@ -66,7 +66,7 @@
       <a class="card" href="#multi">
         <div class="card-icon">🏢</div>
         <h3>멀티·천장형</h3>
-        <p>상가/학원/사무실 상업용 전문 시공</p>
+        <p>상가/학교/학원/사무실 상업용 전문 시공</p>
         <span class="btn btn-ghost">자세히</span>
       </a>
     </div>
@@ -77,13 +77,13 @@
     <h2 class="section-title">회사소개</h2>
     <div class="about">
       <p>
-        에어플러스원시스템은 에어컨 설치·세척·점검 전문팀입니다. 안전한 시공과
-        깔끔한 마감, 투명한 견적으로 신뢰를 쌓아가고 있습니다.
+        에어플러스원시스템은 시스템에어컨 설치 전문 업체입니다.
+        설치부터 세척·점검까지 책임 있게 진행하며, 정직한 시공과 철저한 사후 관리로 고객 만족을 최우선으로 합니다.
       </p>
       <ul class="bullets">
-        <li>책임시공 &amp; 사후관리</li>
-        <li>합리적 가격 &amp; 정확한 견적</li>
-        <li>예약부터 시공까지 원스톱</li>
+        <li>시스템에어컨 전문 시공</li>
+        <li>설치·세척·점검</li>
+        <li>정직한 시공 & 사후관리</li>
       </ul>
     </div>
   </section>
@@ -95,8 +95,31 @@
         <h3>문의</h3>
         <p class="muted">언제든지 연락주세요. 친절히 안내드릴게요.</p>
         <div class="btn-row mt-12">
-          <a class="btn btn-primary" href="tel:010-0000-0000">전화 문의</a>
-          <a class="btn btn-outline" href="mailto:your@email.com">이메일</a>
+          <div class="call-wrap">
+  <button id="revealBtn" class="btn btn-primary" type="button">전화번호 보기</button>
+  <a id="phone" href="tel:010-9929-8314" hidden>010-9929-8314</a>
+</div>
+
+<script>
+  document.getElementById('revealBtn').addEventListener('click', function () {
+    const phone = document.getElementById('phone');
+    phone.hidden = !phone.hidden;   // 번호 보이기 / 숨기기 토글
+    this.textContent = phone.hidden ? '전화번호 보기' : '닫기'; 
+  });
+</script>
+          <div class="mail-wrap">
+  <button id="revealMailBtn" class="btn btn-outline" type="button">이메일 보기</button>
+  <!-- ↓↓↓ 이 부분에 이메일 넣기 -->
+  <a id="mailLink" href="mailto:yacki0412@hanmail.net" hidden>yacki0412@hanmail.net</a>
+</div>
+
+<script>
+  document.getElementById('revealMailBtn').addEventListener('click', function () {
+    const mail = document.getElementById('mailLink');
+    mail.hidden = !mail.hidden;  // 숨기기/보이기 토글
+    this.textContent = mail.hidden ? '이메일 보기' : '닫기';
+  });
+</script>
         </div>
       </div>
       <div>
