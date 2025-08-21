@@ -1,0 +1,12 @@
+title: "에어컨 설치 · 수리 전문 서비스"
+description: "빠르고 믿을 수 있는 에어컨 설치·청소·수리 서비스"
+# 사용자 페이지(예: username.github.io)면 baseurl은 빈 문자열("") 유지
+# 프로젝트 페이지(예: username.github.io/aircon-service)면 baseurl: "/aircon-service" 로 바꾸세요.
+url: "https://username.github.io" # 본인 주소로 변경
+baseurl: ""
+
+theme: jekyll-theme-cayman
+
+# 선택 사항
+# google_analytics: G-XXXXXXXXXX
+# show_downloads: false
